@@ -58,8 +58,8 @@ function PlasmicHome__RenderFunc(props) {
       <div className={projectcss.plasmic_page_wrapper}>
         <p.Stack
           as={"div"}
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
+          data-plasmic-name={"defaultSite"}
+          data-plasmic-override={overrides.defaultSite}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           hasGap={true}
@@ -70,7 +70,7 @@ function PlasmicHome__RenderFunc(props) {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            sty.root
+            sty.defaultSite
           )}
         >
           <nav
@@ -78,11 +78,13 @@ function PlasmicHome__RenderFunc(props) {
             data-plasmic-override={overrides.nav}
             className={classNames(projectcss.all, sty.nav)}
           >
-            <Header
-              data-plasmic-name={"header"}
-              data-plasmic-override={overrides.header}
-              className={classNames("__wab_instance", sty.header)}
-            />
+            {true ? (
+              <Header
+                data-plasmic-name={"homepage"}
+                data-plasmic-override={overrides.homepage}
+                className={classNames("__wab_instance", sty.homepage)}
+              />
+            ) : null}
           </nav>
           {true ? (
             <section className={classNames(projectcss.all, sty.section__cukr6)}>
@@ -172,9 +174,18 @@ function PlasmicHome__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "nav", "header", "columns", "column", "h1", "h2"],
-  nav: ["nav", "header"],
-  header: ["header"],
+  defaultSite: [
+    "defaultSite",
+    "nav",
+    "homepage",
+    "columns",
+    "column",
+    "h1",
+    "h2"
+  ],
+
+  nav: ["nav", "homepage"],
+  homepage: ["homepage"],
   columns: ["columns", "column", "h1"],
   column: ["column", "h1"],
   h1: ["h1"],
@@ -201,7 +212,7 @@ function makeNodeComponent(nodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "defaultSite") {
     func.displayName = "PlasmicHome";
   } else {
     func.displayName = `PlasmicHome.${nodeName}`;
@@ -211,11 +222,11 @@ function makeNodeComponent(nodeName) {
 
 export const PlasmicHome = Object.assign(
   // Top-level PlasmicHome renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("defaultSite"),
   {
     // Helper components rendering sub-elements
     nav: makeNodeComponent("nav"),
-    header: makeNodeComponent("header"),
+    homepage: makeNodeComponent("homepage"),
     columns: makeNodeComponent("columns"),
     column: makeNodeComponent("column"),
     h1: makeNodeComponent("h1"),
@@ -225,7 +236,7 @@ export const PlasmicHome = Object.assign(
     internalArgProps: PlasmicHome__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Rubrica telefonica",
       description: "",
       ogImageSrc: "",
       canonical: ""
