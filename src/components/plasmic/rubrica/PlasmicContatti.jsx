@@ -16,12 +16,12 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import Header from "../../Header"; // plasmic-import: HKS-4yiT-Ecwy/component
+import Header2 from "../../Header2"; // plasmic-import: khpp2BaapwX/component
+import RigaContatti from "../../RigaContatti"; // plasmic-import: 2OfHUDT1yAk/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_rubrica.module.css"; // plasmic-import: hDnb1e9HU6FSLTm6gTNrXy/projectcss
 import sty from "./PlasmicContatti.module.css"; // plasmic-import: Soagzd45Lm/css
-import UsersvgIcon from "./icons/PlasmicIcon__Usersvg"; // plasmic-import: J7WCCLHpj8Ajhn/icon
 
 export const PlasmicContatti__VariantProps = new Array();
 
@@ -67,113 +67,33 @@ function PlasmicContatti__RenderFunc(props) {
           )}
         >
           <div className={classNames(projectcss.all, sty.freeBox__vr7Yr)}>
-            <Header
-              data-plasmic-name={"header"}
-              data-plasmic-override={overrides.header}
-              className={classNames("__wab_instance", sty.header)}
+            <Header2
+              data-plasmic-name={"header2"}
+              data-plasmic-override={overrides.header2}
+              className={classNames("__wab_instance", sty.header2)}
             />
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___0666E)}>
-            <div
-              data-plasmic-name={"contatti"}
-              data-plasmic-override={overrides.contatti}
-              className={classNames(projectcss.all, sty.contatti)}
-            >
-              <div className={classNames(projectcss.all, sty.column__yRwps)}>
-                <div className={classNames(projectcss.all, sty.freeBox__ms1VU)}>
-                  {true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__hIhGq)}
-                    >
-                      <UsersvgIcon
-                        data-plasmic-name={"svg"}
-                        data-plasmic-override={overrides.svg}
-                        className={classNames(projectcss.all, sty.svg)}
-                        role={"img"}
-                      />
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__k3TNv
-                        )}
-                      >
-                        {" Nome"}
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__p1LZz)}>
-                <div className={classNames(projectcss.all, sty.freeBox__u3O5O)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gnMi2
-                    )}
-                  >
-                    {"contatto"}
-                  </div>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__oRgn1)}>
-                <div className={classNames(projectcss.all, sty.freeBox__bJcIn)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3GRmu
-                    )}
-                  >
-                    {"Indirizzo"}
-                  </div>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.column___8PyF2)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___1KyAb)}
-                >
-                  <a
-                    data-plasmic-name={"link"}
-                    data-plasmic-override={overrides.link}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link
-                    )}
-                    href={"https://www.plasmic.app/"}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#000000" }}
-                      >
-                        {"Eventuale sito"}
-                      </span>
-                    </React.Fragment>
-                  </a>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__jmQuq)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___7QyOh)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__rvkRe
-                    )}
-                  >
-                    {"Note"}
-                  </div>
-                </div>
-              </div>
-            </div>
+            <RigaContatti
+              className={classNames("__wab_instance", sty.rigaContatti__nR5Gz)}
+            />
           </div>
+          {([2, 3, 4] ?? []).map((currentItem, currentIndex) => (
+            <div
+              className={classNames(projectcss.all, sty.freeBox__zL0V2)}
+              key={currentIndex}
+            >
+              {([2, 3, 4] ?? []).map((currentItem, currentIndex) => (
+                <RigaContatti
+                  className={classNames(
+                    "__wab_instance",
+                    sty.rigaContatti__oj29W
+                  )}
+                  key={currentIndex}
+                />
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </React.Fragment>
@@ -181,11 +101,8 @@ function PlasmicContatti__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "contatti", "svg", "link"],
-  header: ["header"],
-  contatti: ["contatti", "svg", "link"],
-  svg: ["svg"],
-  link: ["link"]
+  root: ["root", "header2"],
+  header2: ["header2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -221,10 +138,7 @@ export const PlasmicContatti = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    header: makeNodeComponent("header"),
-    contatti: makeNodeComponent("contatti"),
-    svg: makeNodeComponent("svg"),
-    link: makeNodeComponent("link"),
+    header2: makeNodeComponent("header2"),
     // Metadata about props expected for PlasmicContatti
     internalVariantProps: PlasmicContatti__VariantProps,
     internalArgProps: PlasmicContatti__ArgProps,
