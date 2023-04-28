@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -190,7 +190,8 @@
           "name": "UploadWrapper",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
@@ -304,6 +305,32 @@
           "cssFilePath": "plasmic/rubrica/PlasmicContatti.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "2OfHUDT1yAk",
+          "name": "RigaContatti",
+          "type": "managed",
+          "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
+          "renderModuleFilePath": "plasmic/rubrica/PlasmicRigaContatti.jsx",
+          "importSpec": {
+            "modulePath": "RigaContatti.jsx"
+          },
+          "cssFilePath": "plasmic/rubrica/PlasmicRigaContatti.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "khpp2BaapwX",
+          "name": "Header2",
+          "type": "managed",
+          "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
+          "renderModuleFilePath": "plasmic/rubrica/PlasmicHeader2.jsx",
+          "importSpec": {
+            "modulePath": "Header2.jsx"
+          },
+          "cssFilePath": "plasmic/rubrica/PlasmicHeader2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
