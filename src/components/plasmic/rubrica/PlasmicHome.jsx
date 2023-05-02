@@ -12,14 +12,11 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: HKS-4yiT-Ecwy/component
-import { useScreenVariants as useScreenVariantsvjiKuatFCmk0Eg } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: vjiKuatFCmk0EG/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_rubrica.module.css"; // plasmic-import: hDnb1e9HU6FSLTm6gTNrXy/projectcss
@@ -50,9 +47,6 @@ function PlasmicHome__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsvjiKuatFCmk0Eg()
-  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -120,9 +114,7 @@ function PlasmicHome__RenderFunc(props) {
                             sty.h1
                           )}
                         >
-                          {hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "We started with humble beginnings"
-                            : "Rubrica Telefonica"}
+                          {"Rubrica Telefonica"}
                         </h1>
                         <div
                           className={classNames(
@@ -157,9 +149,7 @@ function PlasmicHome__RenderFunc(props) {
                     sty.h2
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Top Collections"
-                    : "Aggiungi tutti i tuoi amici nel modo più facile possibile!"}
+                  {"Aggiungi tutti i tuoi amici nel modo più facile possibile!"}
                 </h2>
                 <div
                   className={classNames(
@@ -174,7 +164,9 @@ function PlasmicHome__RenderFunc(props) {
                 </div>
               </p.Stack>
             </section>
-            <div className={classNames(projectcss.all, sty.freeBox__ejXVi)} />
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__ejXVi)} />
+            ) : null}
           </p.Stack>
         ) : null}
       </div>

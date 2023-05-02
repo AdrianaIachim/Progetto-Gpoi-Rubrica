@@ -18,7 +18,7 @@ function Home_(props, ref) {
   //
   // By default, we are just piping all HomeProps here, but feel free
   // to do whatever works for you.
-  return <PlasmicHome root={{ ref }} {...props} />;
+  return <PlasmicHome defaultSite={{ ref }} {...props} />;
 }
 
 const Home = React.forwardRef(Home_);

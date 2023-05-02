@@ -12,13 +12,10 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
-import { useScreenVariants as useScreenVariantsvjiKuatFCmk0Eg } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: vjiKuatFCmk0EG/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_rubrica.module.css"; // plasmic-import: hDnb1e9HU6FSLTm6gTNrXy/projectcss
@@ -53,9 +50,6 @@ function PlasmicHeader2__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsvjiKuatFCmk0Eg()
-  });
   return (
     <div
       data-plasmic-name={"root"}
@@ -72,97 +66,60 @@ function PlasmicHeader2__RenderFunc(props) {
         sty.root
       )}
     >
-      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+      {true ? (
         <div className={classNames(projectcss.all, sty.freeBox___1Wx6)}>
-          {(
-            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-          ) ? (
+          {true ? (
             <div className={classNames(projectcss.all, sty.columns__rObm)}>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <div className={classNames(projectcss.all, sty.column__w5SQi)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__dMGyg)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
+              <div className={classNames(projectcss.all, sty.column__w5SQi)}>
+                <div className={classNames(projectcss.all, sty.freeBox__dMGyg)}>
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__uxIxB)}
+                    >
+                      <UsersvgIcon
+                        className={classNames(projectcss.all, sty.svg__sLguc)}
+                        role={"img"}
+                      />
+
+                      <a
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__uxIxB
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          sty.link__bf1Uv
                         )}
+                        href={"https://www.plasmic.app/"}
                       >
-                        {(
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <UsersvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__sLguc
-                            )}
-                            role={"img"}
-                          />
-                        ) : null}
-                        <a
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.a,
-                            projectcss.__wab_text,
-                            sty.link__bf1Uv
-                          )}
-                          href={"https://www.plasmic.app/"}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#000000" }}
-                            >
-                              {"Esci"}
-                            </span>
-                          </React.Fragment>
-                        </a>
-                        {(
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <a
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              projectcss.__wab_text,
-                              sty.link___5IuGt
-                            )}
-                            href={"https://www.plasmic.app/"}
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#000000" }}
                           >
-                            {"Some link text"}
-                          </a>
-                        ) : null}
-                      </div>
-                    ) : null}
-                  </div>
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__aStlk)}
-                    />
+                            {"Esci"}
+                          </span>
+                        </React.Fragment>
+                      </a>
+                      <a
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          sty.link___5IuGt
+                        )}
+                        href={"https://www.plasmic.app/"}
+                      >
+                        {"Some link text"}
+                      </a>
+                    </div>
                   ) : null}
                 </div>
-              ) : null}
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__aStlk)}
+                />
+              </div>
+              {true ? (
                 <div className={classNames(projectcss.all, sty.column___0Hhxb)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__pxjcs)}
@@ -187,135 +144,207 @@ function PlasmicHeader2__RenderFunc(props) {
                   </div>
                 </div>
               ) : null}
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <div className={classNames(projectcss.all, sty.column__hl0N)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__gPkWb)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <SearchsvgIcon
-                        className={classNames(projectcss.all, sty.svg__ehQk)}
-                        role={"img"}
-                      />
-                    ) : null}
-                  </div>
+              <div className={classNames(projectcss.all, sty.column__hl0N)}>
+                <div className={classNames(projectcss.all, sty.freeBox__gPkWb)}>
+                  <SearchsvgIcon
+                    className={classNames(projectcss.all, sty.svg__ehQk)}
+                    role={"img"}
+                  />
                 </div>
-              ) : null}
+              </div>
             </div>
           ) : null}
           <div className={classNames(projectcss.all, sty.columns__pbwY)}>
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
-              <div className={classNames(projectcss.all, sty.column__ruAqu)}>
+            <div className={classNames(projectcss.all, sty.column__ruAqu)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___1EKls)}
+              >
                 <p.Stack
-                  as={"div"}
+                  as={"a"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox___1EKls)}
-                >
-                  <p.Stack
-                    as={"a"}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__mKjYw
-                    )}
-                    href={`/Login`}
-                  >
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__tOymS)}
-                        role={"img"}
-                      />
-                    ) : null}
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___8UVv0
-                      )}
-                    >
-                      {"Esci"}
-                    </div>
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__pvGUg)}
-                        role={"img"}
-                      />
-                    ) : null}
-                  </p.Stack>
-                  <p.Stack
-                    as={"a"}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__ecolG
-                    )}
-                  >
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__kw1Df)}
-                        role={"img"}
-                      />
-                    ) : null}
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3McIb
-                      )}
-                    >
-                      {""}
-                    </div>
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__byr9G)}
-                        role={"img"}
-                      />
-                    ) : null}
-                  </p.Stack>
-                </p.Stack>
-              </div>
-            ) : null}
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
-              <div className={classNames(projectcss.all, sty.column__cdcV8)}>
-                <a
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
-                    sty.link__htHb
+                    sty.link__mKjYw
                   )}
-                  href={`/Home`}
+                  href={`/Login`}
                 >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__hkr4L)}
-                    displayHeight={"100%"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"130px"}
-                    src={{
-                      src: animalpng7EcAyfUUc,
-                      fullWidth: 512,
-                      fullHeight: 512,
-                      aspectRatio: undefined
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__tOymS)}
+                      role={"img"}
+                    />
+                  ) : null}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___8UVv0
+                    )}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToHome"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "Dr3PNLXiw",
+                                  componentUuid: "khpp2BaapwX",
+                                  argName: "destination"
+                                },
+                                () => `/`
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "Dr3PNLXiw",
+                                componentUuid: "khpp2BaapwX"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  location.assign(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToHome"] === "object" &&
+                        typeof $steps["goToHome"].then === "function"
+                      ) {
+                        $steps["goToHome"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "Dr3PNLXiw",
+                            componentUuid: "khpp2BaapwX"
+                          },
+                          $steps["goToHome"]
+                        );
+                      }
                     }}
-                  />
-                </a>
-              </div>
-            ) : null}
+                  >
+                    {"Esci"}
+                  </div>
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__pvGUg)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__ecolG
+                  )}
+                >
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__kw1Df)}
+                      role={"img"}
+                    />
+                  ) : null}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___3McIb
+                    )}
+                  >
+                    {""}
+                  </div>
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__byr9G)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+              </p.Stack>
+            </div>
+            <div className={classNames(projectcss.all, sty.column__cdcV8)}>
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__htHb
+                )}
+                href={`/`}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__hkr4L)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"130px"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToHome"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "Rbf-qVuiP",
+                                componentUuid: "khpp2BaapwX",
+                                argName: "destination"
+                              },
+                              () => `/`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "Rbf-qVuiP",
+                              componentUuid: "khpp2BaapwX"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                location.assign(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToHome"] === "object" &&
+                      typeof $steps["goToHome"].then === "function"
+                    ) {
+                      $steps["goToHome"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "Rbf-qVuiP",
+                          componentUuid: "khpp2BaapwX"
+                        },
+                        $steps["goToHome"]
+                      );
+                    }
+                  }}
+                  src={{
+                    src: animalpng7EcAyfUUc,
+                    fullWidth: 512,
+                    fullHeight: 512,
+                    aspectRatio: undefined
+                  }}
+                />
+              </a>
+            </div>
           </div>
         </div>
       ) : null}

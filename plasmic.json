@@ -321,14 +321,14 @@
         },
         {
           "id": "Tdonqa4iUaLQ1",
-          "name": "Login2",
+          "name": "Home",
           "type": "managed",
           "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
-          "renderModuleFilePath": "plasmic/rubrica/PlasmicLogin2.jsx",
+          "renderModuleFilePath": "plasmic/rubrica/PlasmicHome.jsx",
           "importSpec": {
-            "modulePath": "Login2.jsx"
+            "modulePath": "Home.jsx"
           },
-          "cssFilePath": "plasmic/rubrica/PlasmicLogin2.module.css",
+          "cssFilePath": "plasmic/rubrica/PlasmicHome.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -524,14 +524,7 @@
     }
   ],
   "globalVariants": {
-    "variantGroups": [
-      {
-        "id": "vjiKuatFCmk0EG",
-        "name": "Screen",
-        "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
-        "contextFilePath": "plasmic/rubrica/PlasmicGlobalVariant__Screen.jsx"
-      }
-    ]
+    "variantGroups": []
   },
   "wrapPagesWithGlobalContexts": true,
   "cliVersion": "0.1.272",

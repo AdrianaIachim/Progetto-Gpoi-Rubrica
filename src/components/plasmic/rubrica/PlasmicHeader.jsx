@@ -12,13 +12,10 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
-import { useScreenVariants as useScreenVariantsvjiKuatFCmk0Eg } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: vjiKuatFCmk0EG/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_rubrica.module.css"; // plasmic-import: hDnb1e9HU6FSLTm6gTNrXy/projectcss
@@ -53,9 +50,6 @@ function PlasmicHeader__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsvjiKuatFCmk0Eg()
-  });
   return (
     <div
       data-plasmic-name={"root"}
@@ -72,92 +66,65 @@ function PlasmicHeader__RenderFunc(props) {
         sty.root
       )}
     >
-      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+      {true ? (
         <div className={classNames(projectcss.all, sty.freeBox___1J6Dj)}>
-          {(
-            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-          ) ? (
+          {true ? (
             <div className={classNames(projectcss.all, sty.columns__amsp4)}>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <div className={classNames(projectcss.all, sty.column___24Elv)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___1IDtu)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
+              <div className={classNames(projectcss.all, sty.column___24Elv)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___1IDtu)}
+                >
+                  {true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___8Ghyf
+                      )}
+                    >
+                      <UsersvgIcon
+                        className={classNames(projectcss.all, sty.svg___9YCw8)}
+                        role={"img"}
+                      />
+
+                      <a
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___8Ghyf
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          sty.link___7JJsR
                         )}
+                        href={"https://www.plasmic.app/"}
                       >
-                        <UsersvgIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___9YCw8
-                          )}
-                          role={"img"}
-                        />
-
-                        <a
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.a,
-                            projectcss.__wab_text,
-                            sty.link___7JJsR
-                          )}
-                          href={"https://www.plasmic.app/"}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#000000" }}
-                            >
-                              {"Accedi"}
-                            </span>
-                          </React.Fragment>
-                        </a>
-                        {(
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <a
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              projectcss.__wab_text,
-                              sty.link___84OLn
-                            )}
-                            href={"https://www.plasmic.app/"}
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#000000" }}
                           >
-                            {"Some link text"}
-                          </a>
-                        ) : null}
-                      </div>
-                    ) : null}
-                  </div>
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ssTU)}
-                    />
+                            {"Accedi"}
+                          </span>
+                        </React.Fragment>
+                      </a>
+                      <a
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          sty.link___84OLn
+                        )}
+                        href={"https://www.plasmic.app/"}
+                      >
+                        {"Some link text"}
+                      </a>
+                    </div>
                   ) : null}
                 </div>
-              ) : null}
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__ssTU)}
+                />
+              </div>
+              {true ? (
                 <div className={classNames(projectcss.all, sty.column__fgMnk)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__pUr5)}
@@ -182,150 +149,272 @@ function PlasmicHeader__RenderFunc(props) {
                   </div>
                 </div>
               ) : null}
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <div className={classNames(projectcss.all, sty.column__zqPyA)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___7G1Ip)}
-                  >
-                    <SearchsvgIcon
-                      className={classNames(projectcss.all, sty.svg__o85H5)}
-                      role={"img"}
-                    />
-                  </div>
+              <div className={classNames(projectcss.all, sty.column__zqPyA)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___7G1Ip)}
+                >
+                  <SearchsvgIcon
+                    className={classNames(projectcss.all, sty.svg__o85H5)}
+                    role={"img"}
+                  />
                 </div>
-              ) : null}
+              </div>
             </div>
           ) : null}
           <div className={classNames(projectcss.all, sty.columns__oCoy)}>
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
-              <div className={classNames(projectcss.all, sty.column___9BtGf)}>
+            <div className={classNames(projectcss.all, sty.column___9BtGf)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__tcke)}
+              >
                 <p.Stack
-                  as={"div"}
+                  as={"a"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__tcke)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___9RyUl
+                  )}
+                  href={`/Login`}
                 >
-                  <p.Stack
-                    as={"a"}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link___9RyUl
-                    )}
-                    href={`/Login`}
-                  >
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__hexhM)}
-                        role={"img"}
-                      />
-                    ) : null}
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__i701T)}
-                    >
-                      <UsersvgIcon
-                        className={classNames(projectcss.all, sty.svg__fmnXa)}
-                        role={"img"}
-                      />
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jYcWa
-                      )}
-                    >
-                      {"Accedi"}
-                    </div>
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__qr0JK)}
-                        role={"img"}
-                      />
-                    ) : null}
-                  </p.Stack>
-                  <p.Stack
-                    as={"a"}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__mgaxh
-                    )}
-                  >
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__rp2Us)}
-                        role={"img"}
-                      />
-                    ) : null}
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__wqcsW
-                      )}
-                    >
-                      {""}
-                    </div>
-                    {false ? (
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__wwofV)}
-                        role={"img"}
-                      />
-                    ) : null}
-                  </p.Stack>
-                </p.Stack>
-              </div>
-            ) : null}
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
-              <div className={classNames(projectcss.all, sty.column___5QFxA)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__of9Hq)}
-                  displayHeight={"100%"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"130px"}
-                  src={{
-                    src: animalpng7EcAyfUUc,
-                    fullWidth: 512,
-                    fullHeight: 512,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-            ) : null}
-            <div className={classNames(projectcss.all, sty.column__bPfs0)}>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <div className={classNames(projectcss.all, sty.freeBox__vFv5M)}>
-                  {true ? (
-                    <a
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__xi4Ps
-                      )}
-                      href={"#"}
-                    >
-                      <SearchsvgIcon
-                        className={classNames(projectcss.all, sty.svg__obEd)}
-                        role={"img"}
-                      />
-                    </a>
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__hexhM)}
+                      role={"img"}
+                    />
                   ) : null}
-                </div>
-              ) : null}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__i701T)}
+                  >
+                    <UsersvgIcon
+                      className={classNames(projectcss.all, sty.svg__fmnXa)}
+                      role={"img"}
+                    />
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jYcWa
+                    )}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToLogin"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "b5cJWw_ca",
+                                  componentUuid: "HKS-4yiT-Ecwy",
+                                  argName: "destination"
+                                },
+                                () => `/Login`
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "b5cJWw_ca",
+                                componentUuid: "HKS-4yiT-Ecwy"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  location.assign(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToLogin"] === "object" &&
+                        typeof $steps["goToLogin"].then === "function"
+                      ) {
+                        $steps["goToLogin"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "b5cJWw_ca",
+                            componentUuid: "HKS-4yiT-Ecwy"
+                          },
+                          $steps["goToLogin"]
+                        );
+                      }
+                    }}
+                  >
+                    {"Accedi"}
+                  </div>
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__qr0JK)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+                <p.Stack
+                  as={"a"}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__mgaxh
+                  )}
+                >
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__rp2Us)}
+                      role={"img"}
+                    />
+                  ) : null}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wqcsW
+                    )}
+                  >
+                    {""}
+                  </div>
+                  {false ? (
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__wwofV)}
+                      role={"img"}
+                    />
+                  ) : null}
+                </p.Stack>
+              </p.Stack>
+            </div>
+            <div className={classNames(projectcss.all, sty.column___5QFxA)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__of9Hq)}
+                displayHeight={"100%"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"130px"}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["goToHome"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          destination: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "navigation",
+                              interactionUuid: "T52vp6PF7",
+                              componentUuid: "HKS-4yiT-Ecwy",
+                              argName: "destination"
+                            },
+                            () => `/`
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "T52vp6PF7",
+                            componentUuid: "HKS-4yiT-Ecwy"
+                          },
+                          () =>
+                            (({ destination }) => {
+                              location.assign(destination);
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["goToHome"] === "object" &&
+                    typeof $steps["goToHome"].then === "function"
+                  ) {
+                    $steps["goToHome"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "navigation",
+                        interactionUuid: "T52vp6PF7",
+                        componentUuid: "HKS-4yiT-Ecwy"
+                      },
+                      $steps["goToHome"]
+                    );
+                  }
+                }}
+                src={{
+                  src: animalpng7EcAyfUUc,
+                  fullWidth: 512,
+                  fullHeight: 512,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.column__bPfs0)}>
+              <div className={classNames(projectcss.all, sty.freeBox__vFv5M)}>
+                {true ? (
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__xi4Ps
+                    )}
+                    href={"#"}
+                  >
+                    <SearchsvgIcon
+                      className={classNames(projectcss.all, sty.svg__obEd)}
+                      onClick={async event => {
+                        const $steps = {};
+                        $steps["goToContatti"] = true
+                          ? (() => {
+                              const actionArgs = {
+                                destination: __wrapUserFunction(
+                                  {
+                                    type: "InteractionArgLoc",
+                                    actionName: "navigation",
+                                    interactionUuid: "Vt6bgpkRM",
+                                    componentUuid: "HKS-4yiT-Ecwy",
+                                    argName: "destination"
+                                  },
+                                  () => `/Contatti`
+                                )
+                              };
+                              return __wrapUserFunction(
+                                {
+                                  type: "InteractionLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "Vt6bgpkRM",
+                                  componentUuid: "HKS-4yiT-Ecwy"
+                                },
+                                () =>
+                                  (({ destination }) => {
+                                    location.assign(destination);
+                                  })?.apply(null, [actionArgs]),
+                                actionArgs
+                              );
+                            })()
+                          : undefined;
+                        if (
+                          typeof $steps["goToContatti"] === "object" &&
+                          typeof $steps["goToContatti"].then === "function"
+                        ) {
+                          $steps["goToContatti"] = await __wrapUserPromise(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "Vt6bgpkRM",
+                              componentUuid: "HKS-4yiT-Ecwy"
+                            },
+                            $steps["goToContatti"]
+                          );
+                        }
+                      }}
+                      role={"img"}
+                    />
+                  </a>
+                ) : null}
+              </div>
             </div>
           </div>
         </div>

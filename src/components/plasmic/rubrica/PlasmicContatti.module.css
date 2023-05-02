@@ -22,11 +22,6 @@
 :where(.root > *) {
   grid-column: 4;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  :where(.root > *) {
-    grid-column: 4;
-  }
-}
 .freeBox__vr7Yr {
   display: flex;
   position: relative;

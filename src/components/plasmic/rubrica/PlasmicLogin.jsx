@@ -161,7 +161,7 @@ function PlasmicLogin__RenderFunc(props) {
                     projectcss.a,
                     sty.link__eo7S
                   )}
-                  href={`/Home`}
+                  href={`/`}
                 >
                   <p.PlasmicImg
                     data-plasmic-name={"img"}
@@ -298,6 +298,52 @@ function PlasmicLogin__RenderFunc(props) {
                       sty.avanti
                     )}
                     disabled={false}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToHome"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "5qWYBSSY5",
+                                  componentUuid: "3S3ZyIsQNW",
+                                  argName: "destination"
+                                },
+                                () => `/`
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "5qWYBSSY5",
+                                componentUuid: "3S3ZyIsQNW"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  location.assign(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToHome"] === "object" &&
+                        typeof $steps["goToHome"].then === "function"
+                      ) {
+                        $steps["goToHome"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "5qWYBSSY5",
+                            componentUuid: "3S3ZyIsQNW"
+                          },
+                          $steps["goToHome"]
+                        );
+                      }
+                    }}
                     ref={ref => {
                       $refs["avanti"] = ref;
                     }}
