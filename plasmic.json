@@ -201,19 +201,6 @@
       "cssFilePath": "plasmic/rubrica/plasmic_rubrica.module.css",
       "components": [
         {
-          "id": "Tdonqa4iUaLQ1",
-          "name": "Home",
-          "type": "managed",
-          "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
-          "renderModuleFilePath": "plasmic/rubrica/PlasmicHome.jsx",
-          "importSpec": {
-            "modulePath": "Home.jsx"
-          },
-          "cssFilePath": "plasmic/rubrica/PlasmicHome.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "AHh7KC16rBitd",
           "name": "Button",
           "type": "managed",
@@ -331,6 +318,19 @@
           "cssFilePath": "plasmic/rubrica/PlasmicHeader2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Tdonqa4iUaLQ1",
+          "name": "Login2",
+          "type": "managed",
+          "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
+          "renderModuleFilePath": "plasmic/rubrica/PlasmicLogin2.jsx",
+          "importSpec": {
+            "modulePath": "Login2.jsx"
+          },
+          "cssFilePath": "plasmic/rubrica/PlasmicLogin2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
