@@ -295,7 +295,7 @@ function PlasmicHeader2__RenderFunc(props) {
                     projectcss.a,
                     sty.link__htHb
                   )}
-                  href={`/`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     alt={""}

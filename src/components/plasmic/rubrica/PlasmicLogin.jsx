@@ -161,7 +161,7 @@ function PlasmicLogin__RenderFunc(props) {
                     projectcss.a,
                     sty.link__eo7S
                   )}
-                  href={`/`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     data-plasmic-name={"img"}
