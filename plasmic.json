@@ -126,7 +126,7 @@
         {
           "id": "zIDEYq9RgLG",
           "name": "AntdDropdown",
-          "componentImportPath": "@plasmicpkgs/antd/skinny/registerDropdown"
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDropdown"
         },
         {
           "id": "5sJiSDZuAW",
@@ -190,8 +190,7 @@
           "name": "UploadWrapper",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
@@ -534,6 +533,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.269",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.269/dist/plasmic.schema.json"
+  "cliVersion": "0.1.272",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.272/dist/plasmic.schema.json"
 }
