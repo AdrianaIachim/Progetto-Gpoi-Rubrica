@@ -216,7 +216,7 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.a,
                       sty.link___9RyUl
                     )}
-                    href={`/login`}
+                    href={`/Login`}
                   >
                     {false ? (
                       <IconIcon

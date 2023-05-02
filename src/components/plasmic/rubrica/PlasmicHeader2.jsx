@@ -227,7 +227,7 @@ function PlasmicHeader2__RenderFunc(props) {
                       projectcss.a,
                       sty.link__mKjYw
                     )}
-                    href={`/login`}
+                    href={`/Login`}
                   >
                     {false ? (
                       <IconIcon
@@ -295,7 +295,7 @@ function PlasmicHeader2__RenderFunc(props) {
                     projectcss.a,
                     sty.link__htHb
                   )}
-                  href={`/home`}
+                  href={`/Home`}
                 >
                   <p.PlasmicImg
                     alt={""}
