@@ -289,22 +289,31 @@ function PlasmicHeader2__RenderFunc(props) {
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
             ) ? (
               <div className={classNames(projectcss.all, sty.column__cdcV8)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__hkr4L)}
-                  displayHeight={"100%"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"130px"}
-                  src={{
-                    src: animalpng7EcAyfUUc,
-                    fullWidth: 512,
-                    fullHeight: 512,
-                    aspectRatio: undefined
-                  }}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__htHb
+                  )}
+                  href={`/`}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__hkr4L)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"130px"}
+                    src={{
+                      src: animalpng7EcAyfUUc,
+                      fullWidth: 512,
+                      fullHeight: 512,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </a>
               </div>
             ) : null}
           </div>

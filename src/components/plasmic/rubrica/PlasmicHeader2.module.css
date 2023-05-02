@@ -511,6 +511,18 @@
     display: none;
   }
 }
+.link__htHb {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
 .img__hkr4L {
   object-fit: cover;
   width: 130px;
@@ -518,6 +530,7 @@
   position: relative;
   filter: none;
   align-self: flex-start;
+  flex-shrink: 0;
   min-height: 0;
 }
 .img__hkr4L > picture > img {
