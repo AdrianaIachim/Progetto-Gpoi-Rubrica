@@ -190,7 +190,8 @@
           "name": "UploadWrapper",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "hDnb1e9HU6FSLTm6gTNrXy",
